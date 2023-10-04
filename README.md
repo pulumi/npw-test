@@ -2,6 +2,12 @@
 
 # Host a Static Website on Amazon S3
 
+
+
+
+
+
+
 A static website that uses [S3's website support](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html).
 For a detailed walkthrough of this example, see the tutorial [Static Website on AWS S3](https://www.pulumi.com/docs/tutorials/aws/s3-website/).
 
