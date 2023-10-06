@@ -7,6 +7,11 @@ For a detailed walkthrough of this example, see the tutorial [Static Website on 
 
 ## Deploying and running the program
 
+
+
+
+
+
 Note: some values in this example will be different from run to run.  These values are indicated
 with `***`.
 
