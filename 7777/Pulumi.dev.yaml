@@ -1,0 +1,5 @@
+config:
+  aws:region: us-east-1
+  pulumi:template: https://github.com/cleverguy25/templates/aws-typescript
+environment:
+  - dev-sandbox
