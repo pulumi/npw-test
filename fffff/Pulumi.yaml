@@ -1,0 +1,3 @@
+name: aws-typescript234234234
+runtime: nodejs
+description: A minimal AWS TypeScript Pulumi program
