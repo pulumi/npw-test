@@ -1,0 +1,5 @@
+config:
+  aws:region: us-west-2
+  pulumi:template: https://github.com/pulumi/examples/aws-go-s3-folder
+environment:
+  - dev-sandbox
