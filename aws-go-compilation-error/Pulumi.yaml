@@ -1,0 +1,3 @@
+name: aws-go-compilation-error
+runtime: go
+description: A minimal AWS Go Pulumi program
