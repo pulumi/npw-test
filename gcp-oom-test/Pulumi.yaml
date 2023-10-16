@@ -1,0 +1,3 @@
+name: gcp-oom-test
+runtime: go
+description: A Go program to deploy a containerized service on Google Cloud

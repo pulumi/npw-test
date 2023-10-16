@@ -1,0 +1,9 @@
+config:
+  gcp-oom-test:appPath: app
+  gcp-oom-test:concurrency: "50"
+  gcp-oom-test:containerPort: "8080"
+  gcp-oom-test:cpu: "1"
+  gcp-oom-test:memory: 1Gi
+  gcp:project: ""
+  gcp:region: us-central1
+  pulumi:template: container-gcp-go
