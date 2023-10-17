@@ -1,0 +1,40 @@
+name: serverless-aws-yaml
+runtime: yaml
+description: A Pulumi YAML program to deploy a serverless application on AWS
+outputs:
+  # The URL at which the REST API will be served.
+  url: ${api.url}
+resources:
+  # A REST API to route requests to HTML content and the Lambda function
+  api:
+    properties:
+      routes:
+        - localPath: www
+          path: /
+        - eventHandler: ${fn}
+          method: GET
+          path: /date
+    type: aws-apigateway:RestAPI
+  # A Lambda function to invoke
+  fn:
+    properties:
+      code:
+        fn::fileArchive: ./function
+      handler: handler.handler
+      role: ${role.arn}
+      runtime: python3.9
+    type: aws:lambda:Function
+  # An execution role to use for the Lambda function
+  role:
+    properties:
+      assumeRolePolicy:
+        fn::toJSON:
+          Statement:
+            - Action: sts:AssumeRole
+              Effect: Allow
+              Principal:
+                Service: lambda.amazonaws.com
+          Version: 2012-10-17T00:00:00Z
+      managedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+    type: aws:iam:Role
