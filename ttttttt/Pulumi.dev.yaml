@@ -1,0 +1,6 @@
+config:
+  aws:region: us-west-2
+  pulumi:template: static-website-aws-typescript
+  static-website-aws-typescript-ttttttt:errorDocument: error.html
+  static-website-aws-typescript-ttttttt:indexDocument: index.html
+  static-website-aws-typescript-ttttttt:path: ./www

@@ -1,0 +1,3 @@
+name: static-website-aws-typescript-ttttttt
+runtime: nodejs
+description: A TypeScript program to deploy a static website on AWS
