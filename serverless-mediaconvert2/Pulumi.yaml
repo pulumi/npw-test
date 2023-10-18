@@ -1,0 +1,3 @@
+name: serverless-mediaconvert2
+runtime: nodejs
+description: A TypeScript program that deploys a serverless video-encoding pipeline on AWS.
