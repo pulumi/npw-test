@@ -1,0 +1,5 @@
+config:
+  aws:region: us-west-2
+  pulumi:template: aws-python
+environment:
+  - dev-sandbox
