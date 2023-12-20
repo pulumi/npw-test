@@ -1,0 +1,6 @@
+name: useful-platypus
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: run NGINX in EC2 with a public port
