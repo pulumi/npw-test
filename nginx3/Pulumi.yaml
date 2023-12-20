@@ -1,0 +1,6 @@
+name: nginx3
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Run that on ubuntu instead
