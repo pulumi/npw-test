@@ -1,0 +1,13 @@
+{
+  "name": "ai-sample-npw",
+  "description": "an s3 bucket",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "@pulumi/pulumi": "^3.0.0",
+    "@pulumi/aws": "6.13.3"
+  }
+}
