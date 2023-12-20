@@ -1,0 +1,4 @@
+config:
+  pulumi:template: https://www.pulumi.com/ai/api/project/c54a684c-3235-49e9-b3f2-1a20011ffedd.zip
+environment:
+  - dev-sandbox
